@@ -71,11 +71,33 @@ const allData = require("./allData")
             console.log(obj.fname , obj.lname)
         })
     }
+
+    const grades = [85, 92, 78, 90, 87, 95];
+
+// Total Grades
+const getTotal = () => grades.reduce((sum, grade) => sum + grade, 0);
+
+// Calculate Average
+const getAverage = () => getTotal() / grades.length;
+
+// Save Student Data
+const saveStudentDataToFile = () => {
+  const total = getTotal();
+  const avg = getAverage();
+  const data = `Total: ${total}\nAverage: ${avg}`;
+  fs.writeFile('student-data.txt', data, (err) => {
+    if (err) throw err;
+    console.log('Student data saved to file!');
+  });
+};
      
 
 module.exports = {
     addPerson,
     deleteData, 
     readData,
-    listData
+    listData,
+    getTotal,
+    getAverage,
+    saveStudentDataToFile,
 }
