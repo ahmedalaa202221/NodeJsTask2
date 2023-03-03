@@ -85,7 +85,8 @@ const saveStudentDataToFile = () => {
   const total = getTotal();
   const avg = getAverage();
   const data = `Total: ${total}\nAverage: ${avg}`;
-  fs.writeFile('student-data.txt', data, (err) => {
+  
+  fs.writeFile('data10.json', data, (err) => {
     if (err) throw err;
     console.log('Student data saved to file!');
   });
