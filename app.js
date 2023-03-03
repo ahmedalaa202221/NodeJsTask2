@@ -76,7 +76,19 @@ yargs.command({
     handler : ()=>{
         data.showData()
     }
- })
+ });
+
+yargs.command({
+  command: "calculate",
+  describe: "Calculate total and average grades",
+  handler: () => {
+    const total = data.getTotal();
+    const avg = data.getAverage();
+    console.log(`Total: ${total}\nAverage: ${avg}`);
+    data.saveStudentDataToFile();
+  },
+});
  
 
 yargs.parse() 
+
