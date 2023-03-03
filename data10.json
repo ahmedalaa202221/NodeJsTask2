@@ -1,0 +1,53 @@
+[
+  { "id": 1, "fname": "maha", "lname": "hossam", "State": "Cairo", "Marital": "Married" },
+ 
+  {
+    "id": 2,
+    "fname": "tasneem",
+    "lname": "mustafa",
+    "State": "Cairo",
+    "Marital": "Married" 
+  },
+  {
+    "id": 3,
+    "fname": "tasneem",
+    "lname": "mustafa",
+    "State": "Cairo",
+    "Marital": "Single" 
+  },
+  {
+    "id": 4,
+    "fname": "tasneem",
+    "lname": "mustafa",
+    "State": "Giza",
+    "Marital": "Single" 
+  },
+  {
+    "id": 5,
+    "fname": "tasneem",
+    "lname": "mustafa",
+    "State": "Cairo",
+    "Marital": "Married" 
+  },
+  {
+    "id": 6,
+    "fname": "ahmed",
+    "lname": "mohamed",
+    "State": "Tanta",
+    "Marital": "Single" 
+  },
+  {
+    "id": 7,
+    "fname": "Raafat",
+    "lname": "Salah",
+    "State": "Cairo",
+    "Marital": "Single" 
+  },
+  {
+    "id": 8,
+    "fname": "Maha",
+    "lname": "Essam",
+    "State": "mansoura",
+    "Marital": "Single" 
+  } 
+]
